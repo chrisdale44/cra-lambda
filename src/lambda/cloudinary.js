@@ -6,7 +6,7 @@ export async function handler(event, context) {
     const data = response.data
     return {
       statusCode: 200,
-      body: JSON.stringify({ images: res.data })
+      body: JSON.stringify({ images: data })
     }
   } catch (err) {
     console.log(err) // output to netlify function log
